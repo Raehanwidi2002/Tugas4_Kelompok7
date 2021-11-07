@@ -116,6 +116,121 @@
           <img src="ERD.png"class="img-fluid">
         </div>
         <br>
+          
+          <!-- Tabel User -->
+            <li>Tabel User</li>
+            <p>Tabel user digunakan untuk menyimpan data pengguna agar bisa masuk ke aplikasi sistem informasi inventori dengan masing-masing level yang dibutuhkan yang berisi id, username, password, client dan level (user) . Berikut penjelasan isi tabel user : <br>
+            Nama Tabel : tbl_user <br>
+            Primary Key : Id_user <br>
+            Foreign Key : - <br>
+            </p>
+            <table class="col-md-6 table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">Field</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Id_user</td>
+                  <td>Interger</td>
+                  <td>11</td>
+                  <td>Primary key</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>username</td>
+                  <td>Varchar</td>
+                  <td>20</td>
+                  <td>Username</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>password</td>
+                  <td>Varchar</td>
+                  <td>50</td>
+                  <td>Password</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>client</td>
+                  <td>Varchar</td>
+                  <td>10</td>
+                  <td>Client</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>level</td>
+                  <td>Varchar</td>
+                  <td>enum</td>
+                  <td>admin,manager,client</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+            <!-- Tabel Client-->
+            <li>Tabel Client</li>
+            <p>Tabel client digunakan untuk menyimpan data client pemesan yang berisi id, kodeclient, namaclient, kota, no_hp , alamat. Berikut penjelasan isi tabel client : <br>
+            Nama Tabel : tbl_client <br>
+            Primary Key : kodeclient <br>
+            Foreign Key : - <br>
+            </p>
+            <table class="col-md-6 table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">Field</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>kodeclient</td>
+                  <td>Varchar</td>
+                  <td>10</td>
+                  <td>Primary key</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>namaclient</td>
+                  <td>Varchar</td>
+                  <td>30</td>
+                  <td>Nama Client</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>kota</td>
+                  <td>Varchar</td>
+                  <td>20</td>
+                  <td>kota</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>no_hp</td>
+                  <td>Varchar</td>
+                  <td>12</td>
+                  <td>Nomor Hp</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>alamat</td>
+                  <td>Varchar</td>
+                  <td>100</td>
+                  <td>Alamat</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
         
         
     </div>
