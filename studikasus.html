@@ -418,7 +418,59 @@
 
             <br>
             
-            
+            <!-- Tabel Transaksi-->
+            <li>Tabel Transaksi
+            </li>
+            <p>Tabel transaksi digunakan untuk membuat data bayangan dari Tabel stok yang digunakan untuk menampilkan status barang tersebut ditolak, diterima, pending atau selesai. Berikut penjelasan isi tabel tambah stok :
+              <br>
+              Nama Tabel : tbl_transaksi  <br>
+              Primary Key : Id_transaksi<br>
+              Foreign Key : Id_order<br>
+            </p>
+            <table class="col-md-6 table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">Field</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Id_transaksi</td>
+                  <td>Interger</td>
+                  <td>11</td>
+                  <td>Primary key</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Id_order</td>
+                  <td>Integer</td>
+                  <td>11</td>
+                  <td>Foreign key</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>kodeclient</td>
+                  <td>Varchar</td>
+                  <td>10</td>
+                  <td>Kode Client</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>status</td>
+                  <td>Enum</td>
+                  <td>-</td>
+                  <td>Terima,Tolak,
+                    Pending,Selesai
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+          </ul>
           
     </div>
 </body>
