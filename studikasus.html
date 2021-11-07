@@ -231,6 +231,67 @@
             </table>
 
             <br>
+
+            <!-- Tabel Stok-->
+            <li>Tabel Stok</li>
+            <p>Tabel tambah stok digunakan untuk menyimpan data penambahan barang yang dimasukkan ke dalam gudang yang berisi id, kodebarang, namabarang, jumlah, satuan. . Berikut penjelasan isi tabel tambah stok : <br>
+              Nama Tabel	: tbl_stok  <br>
+              Primary Key : Id_stok
+              <br>
+              Foreign Key : kodebarang <br>
+            </p>
+          
+            <table class="col-md-6 table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">Field</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>id_stok</td>
+                  <td>Interger</td>
+                  <td>11</td>
+                  <td>Primary key</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>kodebarang</td>
+                  <td>Varchar</td>
+                  <td>20</td>
+                  <td>Foreign key</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>namabarang</td>
+                  <td>Varchar</td>
+                  <td>50</td>
+                  <td>Nama Barang</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>jumlah</td>
+                  <td>Varchar</td>
+                  <td>10</td>
+                  <td>Jumlah</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>satuan</td>
+                  <td>Varchar</td>
+                  <td>20</td>
+                  <td>Satuan</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+
             <!-- Tabel Tambah Stok-->
             <li>Tabel Tambah Stok
             </li>
@@ -284,7 +345,81 @@
           
             <br>
         
-        
+            <!-- Tabel Order-->
+            <li>Tabel Order
+            </li>
+            <p>Tabel order digunakan untuk menyimpan data bioskop yang order barang. berikut penjelasan isi tabel tambah stok :<br>
+              Nama Tabel : tbl_order <br>
+              Primary Key : Id_order<br>
+              Foreign Key : -<br>
+            </p>
+            <table class="col-md-6 table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">Field</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Id_order</td>
+                  <td>Interger</td>
+                  <td>11</td>
+                  <td>Primary key</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>tgl</td>
+                  <td>date</td>
+                  <td>20</td>
+                  <td>Tanggal barang masuk</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>kodeclient</td>
+                  <td>Varchar</td>
+                  <td>10</td>
+                  <td>Kode Client</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>kodebarang</td>
+                  <td>Varchar</td>
+                  <td>10</td>
+                  <td>Kode Barang</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>jumlah</td>
+                  <td>Integer</td>
+                  <td>10</td>
+                  <td>Jumlah</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>keterangan</td>
+                  <td>Varchar</td>
+                  <td>100</td>
+                  <td>Keterangan</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>status</td>
+                  <td>Enum</td>
+                  <td>-</td>
+                  <td>Terima/Tolak</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+            
+            
+          
     </div>
 </body>
 </html>
